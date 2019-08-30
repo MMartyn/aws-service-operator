@@ -18,6 +18,7 @@ operator:
   #loglevel:
   #region: us-west-2
   #resources: s3bucket,dynamodb
+  #k8snamespace:
 
 ## Pod Affinity
 affinity: {}

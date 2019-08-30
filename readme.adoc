@@ -63,7 +63,7 @@ kubectl apply -f configs/aws-service-operator.yaml
 
 .2. Create the CloudFormation templates (cft) used by the operator
 [source,shell]
-kubectl apply -f examples/cloudformationtemplates
+kubectl apply -f charts/aws-service-operator/templates/cloudformationtemplates
 
 .3. (optional) Follow the operator logs
 [source,shell]

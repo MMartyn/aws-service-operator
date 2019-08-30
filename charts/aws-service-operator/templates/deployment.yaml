@@ -58,6 +58,9 @@ spec:
             {{- if .Values.operator.region }}
             - --region={{ .Values.operator.region }}
             {{- end }}
+            {{- if .Values.operator.k8snamespace }}
+            - --k8s-namespace={{ .Values.operator.k8snamespace }}
+            {{- end }}
             {{- if .Values.operator.resources }}
             - --resources={{ .Values.operator.resources }}
             {{- end }}

@@ -5,6 +5,8 @@ items:
   kind: CustomResourceDefinition
   metadata:
     name: cloudformationtemplates.service-operator.aws
+    annotations:
+      "helm.sh/hook": crd-install
   spec:
     group: service-operator.aws
     names:
@@ -25,6 +27,8 @@ items:
   kind: CustomResourceDefinition
   metadata:
     name: dynamodbs.service-operator.aws
+    annotations:
+      "helm.sh/hook": crd-install
   spec:
     group: service-operator.aws
     names:
@@ -45,6 +49,8 @@ items:
   kind: CustomResourceDefinition
   metadata:
     name: ecrrepositories.service-operator.aws
+    annotations:
+      "helm.sh/hook": crd-install
   spec:
     group: service-operator.aws
     names:
@@ -62,6 +68,8 @@ items:
   kind: CustomResourceDefinition
   metadata:
     name: elasticaches.service-operator.aws
+    annotations:
+      "helm.sh/hook": crd-install
   spec:
     group: service-operator.aws
     names:
@@ -78,6 +86,8 @@ items:
   kind: CustomResourceDefinition
   metadata:
     name: s3buckets.service-operator.aws
+    annotations:
+      "helm.sh/hook": crd-install
   spec:
     group: service-operator.aws
     names:
@@ -96,6 +106,8 @@ items:
   kind: CustomResourceDefinition
   metadata:
     name: snssubscriptions.service-operator.aws
+    annotations:
+      "helm.sh/hook": crd-install
   spec:
     group: service-operator.aws
     names:
@@ -112,6 +124,8 @@ items:
   kind: CustomResourceDefinition
   metadata:
     name: snstopics.service-operator.aws
+    annotations:
+      "helm.sh/hook": crd-install
   spec:
     group: service-operator.aws
     names:
@@ -130,6 +144,8 @@ items:
   kind: CustomResourceDefinition
   metadata:
     name: sqsqueues.service-operator.aws
+    annotations:
+      "helm.sh/hook": crd-install
   spec:
     group: service-operator.aws
     names:
